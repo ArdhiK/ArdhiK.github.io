@@ -9,12 +9,25 @@
     <title>Belajar Membuat Tabel</title>
 </head>
 
-<header id="header-1">
+<header>
     <H1>
-        Halaman Portofolio Ardhi Kurniawan
+        PORTOFOLIO
     </H1>
 </header>
+
 <body>
+
+    <div class="nav">
+        <ul>
+            <li><a class="active" href="index.html">Biodata</a></li>
+            <li><a class="active" href="portofolio.html">Portofolio</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </div>
+
+
     <form>
         <h3>Tahun Ajaran : </h3>
         <input type="text" name="Tahun Ajaran">
@@ -24,29 +37,33 @@
         <input type="text" name="Pengalaman">
     </form>
     <br>
+
     <div>
         <input type="submit" value="Submit">
     </div>
-
     <br>
 
     <h3>Pengalaman Yang Telah Dilakukan</h3>
 
-    <table border="2">
-        <tr>
-            <th>Tahun Ajaran</th>
-            <th>Jenjang Pendidikan</th>
-            <th>Pengalaman</th>
-        </tr>
-
-        <tr>
-            <td>2017-2020</td>
-            <td>SMAN Negeri Ploso</td>
-            <td>Pernah masuk dalam kegiatan Pramuka sewaktu SMA</td>
-        </tr>
-    </table>
+    <div class="tabel-info">
+        <table>
+            <tr>
+                <th>Tahun Ajaran</th>
+                <th>Jenjang Pendidikan</th>
+                <th>Pengalaman</th>
+            </tr>
+    
+            <tr>
+                <td>2017-2020</td>
+                <td>SMAN Negeri Ploso</td>
+                <td>Pernah masuk dalam kegiatan Pramuka sewaktu SMA</td>
+            </tr>
+        </table>
+    </div>
+    
 </body>
 <br>
+
 <footer></footer>
 
 </html>
