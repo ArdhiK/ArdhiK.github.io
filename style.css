@@ -1,26 +1,37 @@
 header {
-    background-color: rgb(61, 191, 196);
+    background-image: linear-gradient(to right, rgb(61, 191, 196), rgb(41, 90, 196));
+    border-radius: 5px 5px 0px 0px;
     padding: 5px;
-
     text-align: center;
     color: white;
     font-size: 16px;
 }
 
-
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue
 }
 
 footer {
     position: relative;
-    width :auto;
+    width: auto;
+    border-radius: 0px 0px 5px 5px;
     bottom: 0;
-    background-color: rgb(61, 191, 196);
+    background-image: linear-gradient(to right, rgb(61, 191, 196), rgb(41, 90, 196));
     padding: 30px;
     color: white;
     text-align: center;
 }
+
+#ardhi {
+    display: block;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    width: 300px;
+}
+
 
 .nav ul {
     list-style-type: none;
@@ -46,18 +57,43 @@ footer {
     background-color: #111;
 }
 
-.tabel-info table{
-font-family: arial, sans-serif;
-border-collapse: collapse;
-width: 100%;
+form {
+    margin-top: 50px;
+    position: relative;
+
 }
 
-.tabel-info td, th {
+.tabel-info table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tabel-info th {
+    background-color: rgb(141, 141, 141);
+    text-align: left;
+    padding: 8px;
+}
+
+.tabel-info td,
+th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
-  }
-  
-.tabel-info tr:nth-child(even) {
-    background-color: #dddddd;
-  }
+}
+
+#ardhi > img{
+    width: 100%;
+}
+
+@media(min-width: 268px){
+    #ardhi > img {
+        width: 60%
+    }
+}
+
+@media(min-width: 992px){
+    #ardhi > img {
+        width: 60%
+    }
+}
