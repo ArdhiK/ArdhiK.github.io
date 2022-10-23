@@ -1,38 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tugas Biodata</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Biodata Ardhi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 
-<header>
-    <H1>
-        BIODATA
-    </H1>
-</header>
-
 <body>
+    <nav class="navbar fixed-top navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="nama">Biodata</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#nama">profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skill">skill</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <div class="nav">
-        <ul>
-            <li><a class="active" href="index.html">Biodata</a></li>
-            <li><a class="active" href="portofolio.html">Portofolio</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-        </ul>
+    <div class="text-center" id="nama">
+        <br>
+        <h1>ARDHI KURNIAWAN</h1>
+        <br>
+        <img src="Ardhi1.jpg" class="rounded" alt="gambar Ardhi">
     </div>
-
-    <H2 style="text-align:center ;">
-        ARDHI KURNIAWAN <br>
-    </H2>
-    <img id="ardhi" src="https://raw.githubusercontent.com/ArdhiK/web-basic-seal/html_css/Ardhi1.jpg"
-        alt="gambar-ardhi">
-
+    <br>
     <p>
         Hallo nama saya Ardhi Kurniawan. Saya lahir di Jombang, Jawa Timur. hobi saya traveling, berenang, dan
         bersepeda.
@@ -40,41 +48,74 @@
         karena saya ingin mendapatkan pengalaman belajar
         bersama para mentor yang telah terjun lama dalam bidang industri serta mendapatkan banyak relasi.
     </p>
-    <hr>
 
-    <H3>
-        Keahlian Saya :
-    </H3>
-    <ul>
-        <li>UI/UX</li>
-        <li>Programming</li>
-        <li>Editing</li>
-    </ul>
-    <hr>
+    <div class="text-center" id="skill" >
+        <h3>MY SKILL</h3><br>
+    </div>
+    <div class="container px-4 text-center">
+        <div class="row gx-5">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://idseducation.com/wp-content/uploads/2017/05/tips-ui-ux-840x430.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">UI/UX</h5>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://algobash.com/blog/wp-content/uploads/2022/03/Blog0803.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">CODING</h5>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://blog.go.co/wp-content/uploads/2017/11/design-tools.jpeg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">DESIGN</h5>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <form>
+        <div class="text-center" id="kontak">
+            <h3>CONTACT ME</h3><br>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div> <br>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
 
-    <H3>
-        Pendidikan Saya :
-    </H3>
-    <ul>
-        <li>SDN BEDAHLAWAK 2</li>
-        <li>SMPN TEMBELANG</li>
-        <li>SMAN PLOSO</li>
-        <li>POLITEKNIK NEGERI BANYUWANGI</li>
-    </ul>
-    <hr>
-
-    <H3>
-        Akun Media Sosial
-    </H3>
-    <ul>
-        <a href="https://www.instagram.com/?hl=id" target="_blank"><img
-                src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Logo Instagram"
-                style="width:42px;height:42px; margin-right: 25px;"></a>
-        <a href="https://id-id.facebook.com/" target="_blank"><img
-                src="https://cdn2.downdetector.com/static/uploads/logo/FB-f-Logo__blue_512.png" alt="Logo Facebook"
-                style="width:42px;height:42px;"></a>
-    </ul>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
 
 <footer></footer>
